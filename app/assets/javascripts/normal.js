@@ -1,5 +1,7 @@
-function changeColor() {
-  $('h1').css({'background': 'red'})
-}
+$(function() {
+  function changeColor() {
+    $('h1').css({'background': 'red'})
+  }
 
-changeColor()
+  changeColor();
+})

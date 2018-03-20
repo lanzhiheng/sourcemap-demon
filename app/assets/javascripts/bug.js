@@ -1,6 +1,8 @@
-function changeHtml() {
-  $('h1').html('<span>good</span>')
-}
+$(function() {
+  function changeHtml() {
+    $('h1').html('<span>good</span>')
+  }
 
 
-change()
+  change();
+})
