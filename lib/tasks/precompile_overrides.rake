@@ -1,3 +1,5 @@
+require 'fileutils'
+
 namespace :assets do
   task :precompile do
     Rails.cache.clear
@@ -35,6 +37,9 @@ namespace :assets do
 
       Rails.logger.info response.body
     end
+
+    FileUtils.rm_rf Rails.root.join("public/assets/maps")
+    FileUtils.rm_rf Rails.root.join("public/assets/sources")
 
     Rails.logger.info 'upload complete'
   end
