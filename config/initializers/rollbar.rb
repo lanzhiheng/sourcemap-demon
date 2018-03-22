@@ -1,4 +1,4 @@
-CODE_VERSION = '8d8cd4ddc5df2215921dd2febf8d37f22e449235'
+CODE_VERSION = 'd8cd4ddc5df2215921dd2febf8d37f22e449235'
 
 Rollbar.configure do |config|
   # Without configuration, Rollbar is enabled in all environments.

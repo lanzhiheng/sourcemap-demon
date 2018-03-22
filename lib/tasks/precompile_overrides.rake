@@ -4,7 +4,7 @@ namespace :assets do
   task :precompile do
     Rails.cache.clear
     Rake::Task['assets:precompile'].invoke
-    Rake::Task['assets:upload_sourcemap'].invoke
+    # Rake::Task['assets:upload_sourcemap'].invoke
   end
 
   desc 'Upload source map'
